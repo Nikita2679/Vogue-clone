@@ -147,7 +147,7 @@
     color: #242424;
     font-weight: 600;
     font-size: 14px;
-    padding: 10px 340px 10px 0;
+    padding: 10px auto 10px 0;
     text-decoration: none;
     position: sticky;
 }
@@ -160,7 +160,7 @@
 .line{
     width: 20px;
     height: 0;
-    /* border: 1px solid #242424; */
+    border: 1px solid #242424;
     margin: 1px;
     display:inline-block;
     
