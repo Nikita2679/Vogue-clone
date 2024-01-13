@@ -143,16 +143,59 @@
     height: 100px;
 }
 
-.genre-runway{
+.genre-runway, .genre-shopping, .genre-fashion, .genre-celebrity, .genre-hair, .genre-makeup{
     color: #242424;
     font-weight: 600;
     font-size: 14px;
-    padding: 10px 360px 10px 0;
+    padding: 10px 0 10px 0;
+    margin-right: 100%;
     text-decoration: none;
     position: sticky;
+    letter-spacing: 1px;
+    text-wrap: nowrap;
 }
 
-.genre-runway:hover{
+/* .genre-celebrity{
+    color: #242424;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    margin-right: 100%;
+    text-decoration: none;
+    position: sticky;
+    letter-spacing: 1px;
+    text-wrap: nowrap;
+}
+
+.genre-hair{
+    color: #242424;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    margin-right: 100%;
+    text-decoration: none;
+    position: sticky;
+    letter-spacing: 1px;
+    text-wrap: nowrap;
+} */
+
+.post-latest-header{
+    margin-top: 50px;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+.post-latest-content{
+    color: #242424;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 5px 0 0 0;
+    text-decoration: none;
+    word-spacing: -2px;
+    line-height: 130%;
+}
+
+.genre-runway:hover, .genre-shopping:hover, .genre-fashion:hover, .genre-celebrity:hover, .genre-hair:hover, .genre-makeup:hover{
     text-decoration: underline black solid;
     color: #242424;
 }
@@ -160,7 +203,7 @@
 .line{
     width: 20px;
     height: 0;
-    border: 1px solid #242424;
+    /* border: 1px solid #242424; */
     margin: 1px;
     display:inline-block;
     
@@ -170,21 +213,60 @@
     color: #242424;
     font-weight: 600;
     font-size: 24px;
-    padding: 0;
+    padding: 5px 0 0 0;
     text-decoration: none;
+    word-spacing: -3px;
+    line-height: 80%;
     /* position: relative;
     top: -25px; */
 }
 
-.post-1-text:hover{
+.post-2-text{
+    color: #242424;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 5px 0 0 0;
+    text-decoration: none;
+    word-spacing: -2px;
+    line-height: 130%;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.post-1-text:hover, .post-2-text:hover, .post-latest-content:hover{
     text-decoration: underline black solid;
     color: #242424;
 }
 
-.post-1 > p{
+.post-2-text:hover{
+    text-decoration: underline black solid;
+    color: #242424;
+}
+
+.author{
     color: #242424;
     font-weight: 500;
-    padding: 7px 0 30px 0;
+    padding: 0 0 -5px 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.post-latest > .empty-space{
+    width: auto;
+    height: 220px;
+}
+
+.post-horizontal-title{
+    text-align: center;
+    font-size: 20px;
+}
+
+.post-horizontal-scroll{
+    position: relative;
+    width: 60%;
+    overflow: hidden;
 }
 
 @media (min-width:320px)  {
@@ -208,12 +290,13 @@
         max-width: 75%;
         min-height: 75%;
     } */
-    .img-logo{
+    nav>div>a>img{
         width: 80px;
         position: absolute;
         left: 70px;
         top: 10px;
     }
+
     .wrapper{
         padding: 60px 25px 0 25px;
     }
@@ -222,19 +305,38 @@
         width: 100%;
     }
 }
-@media (min-width:481px)  {
+@media (min-width:540px)  {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
     .navbar-collapse{
         max-width: 90%;
     }
-    .img-logo{
+    nav>div>a>img{
         width: 80px;
+        position: absolute;
+        left: 70px;
+        top: 10px;
+    }
+    .subscribe-now-ad-btn{
+        margin: -70px 0 0 110px;
     }
 }
-@media (min-width:641px)  {
+@media (min-width:767px)  {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
     .navbar-collapse{
         max-width: 90%;
+    }
+    /* .logo{
+        text-align: center; */
+    }
+    nav>div>a>img{
+        width: 80px;
+/*         Center with absolute */
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1;
     }
 }
 @media (min-width:961px)  {
